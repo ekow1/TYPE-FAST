@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TYPE FASTER | improve your typing skills</title>
+  <link rel="icon" type="image/x-icon" href="/ori_3630259_tcs2d64nag1n9pn0g206mjxoyysaqujzrmw6ycmz_tp-monogram-logo-design.jpg">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class=" font-monospace ">
+  <header class=" text-center p-3 mb-5 mt-5 font-monospace ">
+    <h1 class=" fw-bold fs-2">Type Faster</h1>
+  </header>
+  
+  <div class="container text-center text-dark neuphormic py-5">
+    <div class="row mb-5">
+
+      <div class="col-md-6">
+        <p style="font-size: 30px"> Choose Difficulty</p>
+   <div class="lev">
+       <button id ="easy" class="btn-primary  border-0 px-3 py-2 rounded mx-2  neuphormic-btn ">Easy</button> <button id="medium" class="btn-primary border-0 px-3 py-2 rounded mx-2 neuphormic-btn">Medium</button> <button id="hard" class="btn-primary border-0 px-3 py-2 rounded mx-2  neuphormic-btn">Hard</button>
+   </div>
+        
+      </div>
+      <div class="col-md-6">
+
+        <div class="row mt-5 ">
+          <div class="col-md-6">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" style="fill: hsl(180, 100%, 25%);transform: ;msFilter:;"><path d="M12.25 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zM18 13h-6.75V6h2v5H18v2z"></path></svg>
+              <span id="time" class=" fs-5">0</span>
+            </h3>
+          </div>
+          <div class="col-md-6">
+            <h3 class="neuphormic-btn w-50 text-white py-2 ">Score:
+              <span id="score" >0</span>
+            </h3>
+          </div>
+        </div>
+    
+        
+      </div>
+    </div>
+ 
+    <!-- Word & Input -->
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <p class="lead mt-3">Type The Given Word Within
+          <span class=" fw-bold fs-1" id="seconds" style="color:teal; font-size:1.5rem; font-weight:600;">difficulty-time</span> Seconds:</p>
+        <h2 class="display-2 mb-5" id="current-word">hello</h2>
+        <input type="text" class="form-control form-control-lg bg-transparent input" placeholder="Start typing..." id="word-input" >
+        <h4 class="mt-3 " id="message"></h4>
+
+      
+       
+
+        <!-- Instructions -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="card card-body  text-white  neuphormic-btn ">
+              <h5>Instructions</h5>
+              <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
+                will reset</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
